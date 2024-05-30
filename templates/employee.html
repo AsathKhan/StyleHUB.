@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee</title>
+
+    </head>
+    <body>
+        {% block content%}
+        <center>
+        {% if user.is_authenticated %}
+            Hi {{user.username}}!   
+            <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit">Log out</button>
+            </form>
+
+        {% else %}
+            <p>You are not logged in</p>
+            <form method="post" action="{% url 'login' %}">
+                {% csrf_token %}
+                <button type="submit">Log In</button>
+            </form>
+                
+        {% endif %}
+        </center>
+        {% endblock %}
+
+    </body>
+</html>

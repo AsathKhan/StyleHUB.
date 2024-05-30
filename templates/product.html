@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <title>Add Product</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'css/product.css'%}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    {% block content %}
+    <center>
+        <h3> Add Product</h3>
+        <form method="post" action="">
+            {% csrf_token %}
+            {{ data.as_p }}
+            <input type="submit" value="Register">
+        </form>
+
+        <form action="/Catlogg">
+            <input type="submit" Value="back">
+        </form>
+    </center>
+
+    {% endblock %}
+</body>
+</html>

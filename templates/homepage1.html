@@ -1,0 +1,22 @@
+{% extends 'homepage.html' %}
+
+{% block content %}
+
+<div class="menu__bar">
+    <h1 class="logo">Style<span>HUB</span></h1>
+
+<ul>
+    <li><a href="{% url 'abouturl' %}">About</a></li>
+    <li><a href="{% url 'catlogurl' %}">Product Catlog</a></li>
+    <li><a href="#">Upcoming Product</a></li>
+    <li><a href="{% url 'employeeurl'%}">Teams</a></li>
+    <li><a href="#">Contact us</a></li>   
+</ul>
+
+</div>
+
+<div>
+    <h2>Enpower Your Fashion Journey</h2>
+</div>
+
+{% endblock %}

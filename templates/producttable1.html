@@ -1,0 +1,41 @@
+{%extends 'producttable.html' %}
+
+{% block content %}
+<h1>Sales Details</h1>
+
+<form class="input" action="Catlog/addproducts">
+    <input type="submit" value="Add product" style="background-color: yellow ">
+</form>
+
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Brand</th>
+        <th>Price</th>
+        <th>Gender</th>
+        <th>Fabric Type</th>
+        <th>Free_size</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <div>
+    {% for i in data %}
+    <tr>
+        <td>{{i.Product_Name}}</td>
+        <td>{{i.Brand}}</td>
+        <td>{{i.Price}}</td>
+        <td>{{i.Gender}}</td>
+        <td>{{i.Fabric_Type}}</td>
+        <td>{{i.Free_Size}}</td>
+        <td>
+            <a href="{% url 'updateurl' i.id %}"><button type="submit" >update</button></a>
+        </td>
+        <td>
+            <a href="{% url 'deleteurl' i.id %}"><button type="submit" >delete</button></a>
+        </td>
+    </tr> 
+    {% endfor %}
+    </div>  
+    
+</table>
+{% endblock %}

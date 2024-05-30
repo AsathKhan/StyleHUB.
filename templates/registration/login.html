@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SignUp</title>
+        {% load static%}
+        <link rel="stylesheet" href="{% static 'css/login.css'%}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <center>
+        <div class="one">
+        <h3> Employee LogIn</h3>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Log In</button>
+        </form>
+        </div>
+        </center>
+    </body>
+</html>

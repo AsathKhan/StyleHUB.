@@ -1,0 +1,10 @@
+.one{
+    padding:10px;
+    background-color: tomato;
+    width: fit-content;
+    display: table-cell;
+}
+
+button{
+    background-color: aquamarine;
+}

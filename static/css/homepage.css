@@ -1,0 +1,57 @@
+body{
+    background-image: url('../images/fashiontheme.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;   
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.menu__bar{
+    background-color: black;
+    height:80px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo {
+    color: white;
+    font-size:30px;
+}
+
+.logo span{
+    color:blue;
+}
+
+.menu__bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.menu__bar ul li{
+    padding: 10px 30px;
+}
+
+.menu__bar ul li a{
+    text-decoration: white;
+    color: white;
+    font-size: 20px;
+}
+
+.menu__bar :hover{
+    color:blue;
+}
+
+h2{
+    color: blue;
+    text-align: center;
+    font-style: italic;
+}
+
