@@ -40,3 +40,8 @@ def employee(request):
 
 def about(request):
     return render(request, 'about1.html')
+
+def productview(request):
+    mydata=Products.objects.all()
+    
+    return render(request, 'productview.html', {'data':mydata})

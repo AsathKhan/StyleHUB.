@@ -10,4 +10,5 @@ urlpatterns = [
     path('employee',views.employee, name = 'employeeurl'),
     path('About', views.about, name='abouturl'),
     path('Catlogg', views.ptable, name="catloggurl"),   
+    path('productview', views.productview, name = "productviewurl"),
 ]
