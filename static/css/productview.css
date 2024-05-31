@@ -1,0 +1,61 @@
+body{
+    background-image: url(../images/productview.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    text-align: center;
+    color:blue;
+    margin-top: 20px;
+}
+
+.container{
+    background-color: azure;
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.loop{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+img{
+    max-width: 40%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+product-image{
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    padding: 10px;
+    background-color: lightgreen;
+}
+
+td{
+    padding: 10px;
+    background-color: lightpink;
+}
+
+button{
+    background-color: gold;
+    width: 80px;   
+}
+
+button:hover{
+    background-color: blueviolet;
+}
+
+table:hover{
+    background-color: blue;
+}
