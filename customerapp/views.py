@@ -9,7 +9,7 @@ def homepage(request):
 def products(request):
     obj=ProductsForm()
     if request.method == "POST":
-        mydata=ProductsForm(request.POST)
+        mydata=ProductsForm(request.POST, request.FILES)
         
         if mydata.is_valid:
             mydata.save()
@@ -28,7 +28,7 @@ def update(request,id):
     mydata=Products.objects.get(id=id)
     form_template=ProductsForm(instance=mydata)
     if request.method == "POST":
-        mydata=ProductsForm(request.POST, instance=mydata)
+        mydata=ProductsForm(request.POST, request.FILES, instance=mydata)
         
         if mydata.is_valid:
             mydata.save()
@@ -44,4 +44,4 @@ def about(request):
 def productview(request):
     mydata=Products.objects.all()
     
-    return render(request, 'productview.html', {'data':mydata})
+    return render(request, 'productview1.html', {'data':mydata})

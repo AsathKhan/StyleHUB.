@@ -1,5 +1,31 @@
 {% extends 'productview.html' %}
 
 {% block content %}
+<div class="loop">
+    {% for i in data %}
+    <table>
+        
+        <tr>
+            {% if i.Image %}
+            <img class="displayimage" src="{{i.Image.url}}" alt="reload">
+            {% else %}
+            <span> No image </span>
+            {% endif %}
+        </tr><br>        
+        <tr>{{i.Product_Name}}</tr><br>
+        <tr>{{i.Brand}}</tr><br>
+        <tr>${{i.Price}}</tr><br>
+        <tr>{{i.Fabric_type}}</tr>
+        <tr>
+            {% if i.Free_Size %}
+            Free Size
+            {% else %}
+            No Free size available 
+            {% endif %}
+        </tr>
+    </table><br>
+    {% endfor %}
+</div>
+
 
 {% endblock %}

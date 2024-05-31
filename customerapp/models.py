@@ -21,5 +21,6 @@ class Products(models.Model):
     Gender=models.CharField(choices=biology, max_length=8, blank=False)
     Fabric_Type=models.CharField(choices=types, max_length=25)
     Free_Size=models.BooleanField(default=False)
+    Image=models.ImageField(upload_to="product_images/", null=True)
     
     
