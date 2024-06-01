@@ -3,7 +3,7 @@ body {
     background-color: lightgray;
 }
 
-h2 {
+h1 {
     text-align: center;
     margin-top: 20px;
     color: darkslategray;
@@ -84,4 +84,24 @@ button:hover {
 tr:last-child td {
     text-align: center;
     padding-top: 20px;
+}
+
+.floating-button {
+
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.floating-button button {
+    padding: 10px 20px;
+    background-color: rgb(27, 99, 27);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.floating-button button:hover {
+    background-color: violet;
 }

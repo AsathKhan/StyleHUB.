@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(170, 197, 206);
+    font-family: Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: cyan;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: green;
+}

@@ -46,5 +46,10 @@
     {% endfor %}
 </div>
 
+{% if user.is_authenticated %}
+<div class="floating-button">
+    <a href="{% url 'employeeurl' %}"><button> Employee Page </button></a>
+</div>
+{% endif %}
 
 {% endblock %}

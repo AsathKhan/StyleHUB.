@@ -1,34 +1,37 @@
-body{
-    background-color:aqua;
-    }
-
-
-span{
-    color: blue;
-}
-
-h1{
-    color: white;
+.whole {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    text-shadow: green 0px 4px;
-    }
-
-h3{
-    color: blueviolet;
-    text-align: center;
-    }
-
-p{
-    color:rgb(35, 149, 88);
-    padding:20px;
-    background-color: beige;
+    background-color: lightgoldenrodyellow;
     border-radius: 10px;
-    }
-
-h2{ 
-    color:red;
-    text-align: center;
-    font-style: italic;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+h1 {
+    font-size: 36px;
+    color: darkgreen;
+}
+
+h1 span {
+    color: blue; 
+}
+
+h3 {
+    font-size: 24px;
+    color: lightsteelblue;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: blueviolet;
+    margin-top: 50px;
+}

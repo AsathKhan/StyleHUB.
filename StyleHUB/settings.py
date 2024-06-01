@@ -118,7 +118,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LOGIN_REDIRECT_URL = 'catlogurl'
+LOGIN_REDIRECT_URL = 'employeeurl'
 LOGOUT_REDIRECT_URL = '/'
 
 MEDIA_URL = '/media/'

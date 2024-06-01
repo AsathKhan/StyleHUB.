@@ -2,20 +2,27 @@
 <html>
     <head>
         <title>Employee</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/employee.css'%}">
 
     </head>
     <body>
         {% block content%}
         <center>
         {% if user.is_authenticated %}
-            Hi {{user.username}}!   
+            Hi, {{user.username}}. <br><br>
+            You have access to all pages  
+            <br> 
             <form method="post" action="{% url 'logout' %}">
                 {% csrf_token %}
                 <button type="submit">Log out</button>
             </form>
-
+            <a href="{% url 'homepageurl' %}"><button type="submit" >Home</button></a> <br>
             <a href="{% url 'addproductsurl' %}"><button type="submit" >Add Product</button></a>
             <a href="{% url 'catlogurl' %}"><button type="submit" >Catalog Table</button></a>
+            <a href="{% url 'viewproductsurl' %}"><button type="submit" >Catlog</button></a>
+            
+
 
         {% else %}
             <p>You are not logged in</p>
