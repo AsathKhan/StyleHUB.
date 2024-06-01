@@ -1,3 +1,32 @@
-body{
-    background-color: beige;
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(244, 187, 195);
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+h3 {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+
+
+input[type="submit"] {
+    background-color:green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+    
 }

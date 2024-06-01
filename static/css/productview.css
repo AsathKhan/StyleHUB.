@@ -1,61 +1,87 @@
-body{
-    background-image: url(../images/productview.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
 }
 
-h1{
+h2 {
     text-align: center;
-    color:blue;
     margin-top: 20px;
+    color: darkslategray;
 }
 
-.container{
-    background-color: azure;
-    width: 40%;
+.container {
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.loop{
+.loop {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
 
-img{
-    max-width: 40%;
+.product-table {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 250px;
+    margin: 10px;
+    background-color: white;
+}
+
+.product-table:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image img {
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-product-image{
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: lightblue;
+    color: darkslategray;
+}
+
+td {
+    background-color: white;
+    color: dimgray;
+}
+
+.product-image {
     text-align: center;
     padding: 10px;
+    background-color: whitesmoke;
 }
 
-th{
-    padding: 10px;
-    background-color: lightgreen;
+button {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-td{
-    padding: 10px;
-    background-color: lightpink;
+button:hover {
+    background-color: deepskyblue;
 }
 
-button{
-    background-color: gold;
-    width: 80px;   
-}
-
-button:hover{
-    background-color: blueviolet;
-}
-
-table:hover{
-    background-color: blue;
+tr:last-child td {
+    text-align: center;
+    padding-top: 20px;
 }
